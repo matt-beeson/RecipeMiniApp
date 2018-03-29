@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/diet_restriction_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/serving_restriction_spinner"
+        android:layout_below="@+id/search_button"
+        android:layout_marginTop="53dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+
+    <Spinner
+        android:id="@+id/serving_restriction_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/btn_dropdown"
+        />
+
+    <Spinner
+        android:id="@+id/preparation_time_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/serving_restriction_spinner"
+        android:layout_below="@+id/diet_restriction_spinner"
+        android:layout_marginTop="61dp"
+        android:background="@android:drawable/btn_dropdown"
+        />
+
+    <TextView
+        android:id="@+id/diet_restriction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/preparation_time_text"
+        android:layout_alignTop="@+id/diet_restriction_spinner"
+        android:text="Diet Restriction" />
+
+
+    <TextView
+        android:id="@+id/serving_restriction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/serving_restriction_spinner"
+        android:layout_toStartOf="@+id/search_button"
+        android:text="Serving Restriction" />
+
+    <TextView
+        android:id="@+id/preparation_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/serving_restriction_text"
+        android:layout_alignTop="@+id/preparation_time_spinner"
+        android:text="Preparation Time" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Search" />
+</RelativeLayout>
